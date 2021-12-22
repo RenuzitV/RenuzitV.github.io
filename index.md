@@ -1,4 +1,5 @@
 ## Welcome to GitHub Pages
+<embed src="https://purplerain.netlify.app" style="width:500px; height: 300px;">
 
 You can use the [editor on GitHub](https://github.com/RenuzitV/RenuzitV.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
