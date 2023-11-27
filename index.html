@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Duy Nguyen's Portfolio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        <header class="bg-primary text-white text-center py-5">
+            <h1>Duy Nguyen</h1>
+            <h5>Software Engineering (Honours)</h5>
+            <h5>Student ID: s3878076</h5>
+        </header>
+
+        <section class="container" id="main-container">
+            <section class="py-3">
+                <h2>Programming Skills</h2>
+                <ul>
+                    <li>Software Engineer</li>
+                    <li>AWS Cloud Practitioner</li>
+                    <li>Embedded Engineer</li>
+                    <li>IOS & Android Development</li>
+                </ul>
+            </section>
+
+            <div class="row gy-5">
+                <h2 class="py-3">Past Projects:</h2>
+                <div class="container-md ratio-4x3">
+                    <div class="row gx-5 gy-3">
+                        <div class="col d-flex flex-column gap-5">
+                            <div class="card">
+                                <embed
+                                    src="https://appleclock.netlify.app"
+                                    class="card-img-top"
+                                    alt="Apple Clock Project Screenshot" />
+                                <div class="card-body">
+                                    <a
+                                        class="h3 card-title"
+                                        href="https://github.com/RenuzitV/AppleClock"
+                                        >Apple Clock</a
+                                    >
+                                    <p class="card-text">
+                                        simulation of an Apple Clock, drawn
+                                        using p5.js
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <embed
+                                    src="https://inunin.netlify.app"
+                                    class="card-img-top"
+                                    id="heartAnniversary"
+                                    alt="Purple Rain Project" />
+                                <script>
+                                    // Reload the embed after a set duration
+                                    var animationDuration = 12000; // 60 seconds, adjust to the length of your animation
+                                    setInterval(function () {
+                                        var embed =
+                                            document.getElementById(
+                                                "heartAnniversary"
+                                            );
+                                        embed.src = embed.src;
+                                    }, animationDuration);
+                                </script>
+                                <div class="card-body">
+                                    <a
+                                        class="h3 card-title"
+                                        href="https://github.com/RenuzitV/heart"
+                                        >Heart Anniversary</a
+                                    >
+                                    <p class="card-text">
+                                        Anniversary Animation based on
+                                        mathmatical function of the heart shape
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img
+                                    src="./img/chess.gif"
+                                    class="card-img-top"
+                                    alt="Chess Project Screenshot" />
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        <a
+                                            href="https://github.com/RenuzitV/GoodChess"
+                                            >GoodChess</a
+                                        >
+                                    </h3>
+                                    <p class="card-text">
+                                        Using SwiftUI to create a chess
+                                        application that can be played with a
+                                        bot or a player offline.
+                                    </p>
+                                    <p class="card-text">
+                                        Has varying difficulties: from a random
+                                        move logic to grandmaster level
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card">
+                        <embed
+                            src="https://purplerain.netlify.app"
+                            class="card-img-top"
+                            id="rainAnimation"
+                            alt="Purple Rain Project" />
+                        <div class="card-body">
+                            <a
+                                class="h3 card-title"
+                                href="https://github.com/RenuzitV/Purple-Rain"
+                                >Purple Rain</a
+                            >
+                            <p class="card-text">
+                                Purple Rain, calculated and drawn using p5.js
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card">
+                        <div
+                            id="carouselExampleIndicators"
+                            class="carousel slide"
+                            data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner ratio-16x9">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="./img/Log in.png"
+                                        class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./img/home2.png"
+                                        class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./img/home1.png"
+                                        class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./img/wh-transformed.png"
+                                        class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <a
+                                class="h3 card-title"
+                                href="https://github.com/tuananh131001/EEET2580-Front-End-Dramaholic"
+                                >Dramaholic</a
+                            >
+                            <p class="card-text">
+                                Enterprise application build with Java Spring
+                                Boot as backend and ReactJS as frontend
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card">
+                        <img
+                            src="./img/Open News.png"
+                            class="card-img-top"
+                            alt="Open News" />
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <a
+                                    href="https://github.com/tuananh131001/INTE2512_final"
+                                    >Open News</a
+                                >
+                            </h3>
+                            <p class="card-text">
+                                Uses Java FXML to create a news application that
+                                can scrape from most Vietnamese news sites
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="container my-5">
+                <h2>Contact Details</h2>
+                <p>Email: nvminhduy2002@gmail.com</p>
+                <p>Phone: (+84) 967221724</p>
+                <p>Location: Ho Chi Minh City</p>
+            </section>
+        </section>
+
+        <footer class="bg-light text-center py-4">
+            <p>[2023] Duy Nguyen.</p>
+            <a href="https://github.com/RenuzitV" target="_blank" class="mx-2">
+                <i class="fab fa-github"></i>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/nguyen-duy-800901147/"
+                target="_blank"
+                class="mx-2">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
